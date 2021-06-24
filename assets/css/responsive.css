@@ -27,10 +27,12 @@
         background-color: transparent;
         height: 100%;
     }
-    .header__search-btn-icon,
+    .header__search-btn-icon {
+        color: var(--text-color);
+    }
     .header__cart-icon,
     .header-user__icon {
-        color: var(--text-color);
+        color: var(--white-color);
     }
     .header__cart,
     .header__cart-wrap {
@@ -166,6 +168,9 @@
     }
     .homepage-mall__heading--mobile .homepage-mall__heading-title-item:not(:last-child) {
         margin-right: 0;
+    }
+    .homepage-mal__heading-title-item-content {
+        font-size: 1.2rem;
     }
     .footer__content-service-bottom-right {
         flex-direction: column;
