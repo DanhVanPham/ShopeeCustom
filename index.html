@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
     <link rel="stylesheet" href="./assets/fonts/">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -849,7 +849,7 @@
                     </ul>
                     <div style="--swiper-pagination-color: var(--primary-color)" class="swiper-container homepage-mall__heading-content-carousel-wrapper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide homepage-mall__heading-content-carousel homepage-mall__heading-content-carousel--active">
+                            <div class="swiper-slide homepage-mall__heading-content-carousel">
                                 <img src="https://cf.shopee.vn/file/1e3d7d4e94f6765612d44ded7c39341d" alt="Product" class="homepage-mall__heading-content-carousel-img">
                             </div>
                             <div class="swiper-slide homepage-mall__heading-content-carousel">
@@ -962,6 +962,40 @@
                                 <span class="trend-search__content-item-amount">498k+ sản phẩm</span>
                             </div>
                             <div class="trend-search__content-item-img" style="background-image: url('https://cf.shopee.vn/file/b7a4f323f485d3f095d1e1c7de8a9fb4');">
+                            </div>
+                        </li>
+                        <li class="trend-search__content-item">
+                            <div class="trend-search__content-item-info">
+                                <span class="trend-search__content-item-name">Áo-Phông Nữ</span>
+                                <span class="trend-search__content-item-amount">327k+ sản phẩm</span>
+                            </div>
+                            <div class="trend-search__content-item-img" style="background-image: url('https://cf.shopee.vn/file/0630a9e10123aec153e1fd5c92091ca8');">
+                            </div>
+                        </li>
+                        <li class="trend-search__content-item">
+                            <div class="trend-search__content-item-info">
+                                <span class="trend-search__content-item-name">Croptop Nữ</span>
+                                <span class="trend-search__content-item-amount">348k+ sản phẩm</span>
+                            </div>
+                            <div class="trend-search__content-item-img" style="background-image: url('https://cf.shopee.vn/file/45afa271dcbbb68547d51a9f01b995be');">
+                            </div>
+                        </li>
+                        <li class="trend-search__content-item">
+                            <div class="trend-search__content-item-info">
+                                <span class="trend-search__content-item-name">Quần-Short Nữ</span>
+                                <span class="trend-search__content-item-amount">328k+ sản phẩm</span>
+                            </div>
+                            <div class="trend-search__content-item-img" style="background-image: url('https://cf.shopee.vn/file/58d7802a502c6d8ac12c73db27a43fa4');">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="trend-search__content-list trend-search__content-list--mobile">
+                        <li class="trend-search__content-item">
+                            <div class="trend-search__content-item-info">
+                                <span class="trend-search__content-item-name">Tai-Nghe Bluetooth</span>
+                                <span class="trend-search__content-item-amount">265k+ sản phẩm</span>
+                            </div>
+                            <div class="trend-search__content-item-img" style="background-image: url('https://cf.shopee.vn/file/8b251bee0134c6a767bfbfa8a9bf8a10');">
                             </div>
                         </li>
                         <li class="trend-search__content-item">
@@ -3258,7 +3292,7 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script>
         var listBanners = document.querySelectorAll(".banner__carousel .banner__carousel-list .banner__carousel-item");
         document.addEventListener('click', function(event) {
@@ -3278,7 +3312,7 @@
             }
         })
         var swiper = new Swiper(".homepage-mall__heading-content-carousel-wrapper", {
-            spaceBetween: 30,
+            spaceBetween: 5,
             loop: true,
             mousewheel: true,
             keyboard: true,
@@ -3290,17 +3324,7 @@
                 delay: 5000,
                 disableOnInteraction: false,
             },
-            breakpoints: {
-                640: {
-                    slidePerView: 1,
-                },
-                768: {
-                    slidePerView: 2,
-                },
-                1024: {
-                    slidePerView: 3,
-                }
-            }
+            slidesPerView: 'auto'
         });
         var swiper = new Swiper(".banner__carousel", {
             slidesPerView: 1,
@@ -3332,32 +3356,7 @@
                 }
             }
         });
-        var swiper = new Swiper(".section__banner-category", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                "@0.00": {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                "@0.75": {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                "@1.00": {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                "@1.50": {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            },
-        });
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 10,
@@ -3380,6 +3379,7 @@
 
             // Display result inside a div element
             if (w <= 1023) {
+
                 var categoryContent = document.querySelector(".category__content");
                 if (!categoryContent.classList.contains(".swiper-container")) {
                     categoryContent.classList.add("swiper-container");
@@ -3389,18 +3389,17 @@
                         listCategories[i].classList.add("swiper-slide");
                     }
                     var swiper = new Swiper(".category__content", {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
+                        direction: 'horizontal',
+                        slidesPerView: 2,
+                        slidesPerColumn: 2,
+                        slidesPerColumnFill: 'row',
+                        spaceBetween: 0,
                     });
                 }
 
                 var flashSalesContent = document.querySelector(".flash-sales__content");
                 if (!flashSalesContent.classList.contains(".swiper-container")) {
-                    categoryContent.classList.add("swiper-container");
+                    flashSalesContent.classList.add("swiper-container");
                     document.querySelector(".flash-sales__content-list").classList.add("swiper-wrapper");
                     var listFlashSales = document.querySelectorAll(".flash-sales__content-item");
                     for (var i = 0; i < listFlashSales.length; i++) {
@@ -3416,23 +3415,39 @@
                     });
                 }
 
-                // var homePage = document.querySelector(".homepage-mall__heading-content-right");
-                // if (!homePage.classList.contains(".swiper-container")) {
-                //     homePage.classList.add("swiper-container");
-                //     document.querySelector(".homepage-mall__heading-content-product-list").classList.add("swiper-wrapper");
-                //     var listHomePages = document.querySelectorAll(".homepage-mall__heading-content-product-item");
-                //     for (var i = 0; i < listHomePages.length; i++) {
-                //         listHomePages[i].classList.add("swiper-slide");
-                //     }
-                //     var swiper = new Swiper(".homepage-mall__heading-content-right", {
-                //         slidesPerView: 3,
-                //         spaceBetween: 10,
-                //         pagination: {
-                //             el: ".swiper-pagination",
-                //             clickable: true,
-                //         },
-                //     });
-                // }
+                var homePage = document.querySelector(".homepage-mall__heading-content-right");
+                if (!homePage.classList.contains(".swiper-container")) {
+                    homePage.classList.add("swiper-container");
+                    document.querySelector(".homepage-mall__heading-content-product-list").classList.add("swiper-wrapper");
+                    var listHomePages = document.querySelectorAll(".homepage-mall__heading-content-product-item");
+                    for (var i = 0; i < listHomePages.length; i++) {
+                        listHomePages[i].classList.add("swiper-slide");
+                    }
+                    var swiper = new Swiper(".homepage-mall__heading-content-right", {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                }
+                var bannerContent = document.querySelector(".section__banner-category");
+                if (!bannerContent.classList.contains(".swiper-container")) {
+                    bannerContent.classList.add("swiper-container");
+                    document.querySelector(".section__banner-category-list").classList.add("swiper-wrapper");
+                    var listFlashSales = document.querySelectorAll(".section__banner-category-item");
+                    for (var i = 0; i < listFlashSales.length; i++) {
+                        listFlashSales[i].classList.add("swiper-slide");
+                    }
+                    var swiper = new Swiper(".section__banner-category", {
+                        direction: 'horizontal',
+                        slidesPerView: 2,
+                        slidesPerColumn: 2,
+                        slidesPerColumnFill: 'row',
+                        spaceBetween: 0,
+                    });
+                }
             } else {
                 var categoryContent = document.querySelector(".category__content");
                 if (categoryContent.classList.contains("swiper-container")) {
@@ -3464,6 +3479,39 @@
                         listFlashSales[i].style = ''
                     }
                 }
+
+                var bannerContent = document.querySelector(".section__banner-category");
+
+                bannerContent.style = '';
+                if (bannerContent.classList.contains("swiper-container")) {
+                    bannerContent.classList.remove("swiper-container");
+                    bannerContent.classList.remove("swiper-container-initialized");
+                    bannerContent.classList.remove("swiper-container-horizontal");
+                    document.querySelector(".section__banner-category-list").classList.remove("swiper-wrapper");
+                    document.querySelector(".section__banner-category-list").style = ''
+                    var listBannerContent = document.querySelectorAll(".section__banner-category-item");
+                    for (var i = 0; i < listCategories.length; i++) {
+                        listBannerContent[i].classList.remove("swiper-slide");
+                        listBannerContent[i].style = ''
+                    }
+                }
+
+                var homePage = document.querySelector(".homepage-mall__heading-content-right");
+
+                homePage.style = '';
+                if (homePage.classList.contains("swiper-container")) {
+                    homePage.classList.remove("swiper-container");
+                    homePage.classList.remove("swiper-container-initialized");
+                    homePage.classList.remove("swiper-container-horizontal");
+                    document.querySelector(".homepage-mall__heading-content-product-list").classList.remove("swiper-wrapper");
+                    document.querySelector(".homepage-mall__heading-content-product-list").style = ''
+                    var listBannerContent = document.querySelectorAll(".homepage-mall__heading-content-product-item");
+                    for (var i = 0; i < listCategories.length; i++) {
+                        listBannerContent[i].classList.remove("swiper-slide");
+                        listBannerContent[i].style = ''
+                    }
+                }
+
             }
 
 
