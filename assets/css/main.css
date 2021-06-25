@@ -1017,6 +1017,10 @@
     width: 200%;
 }
 
+.banner__carousel-list--mobile {
+    display: none;
+}
+
 .banner__carousel-item {
     max-width: 79.6rem;
     display: flex;
@@ -1175,6 +1179,8 @@
     width: 100%;
     height: 100%;
     border-radius: 2px;
+    object-fit: cover;
+    object-fit: center;
 }
 
 .banner__right-img {
@@ -2209,6 +2215,7 @@
 }
 
 .product__content-panels-item-name {
+    height: 2.8rem;
     font-size: 1.2rem;
     line-height: 1.4rem;
     margin-bottom: 22px;
