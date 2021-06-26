@@ -14,6 +14,12 @@
     --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height) - var(--header-category))
 }
 
+:not(input):not(textarea) {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 * {
     box-sizing: border-box;
 }

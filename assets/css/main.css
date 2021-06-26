@@ -1200,7 +1200,7 @@
 .section__banner-category-list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .section__banner-category-item {
@@ -1217,6 +1217,8 @@
 .section__banner-category-item-link {
     display: block;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .section__banner-category-img {
