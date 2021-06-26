@@ -203,7 +203,8 @@
     .homepage-mall__heading-content-carousel-wrapper {
         margin: 0 auto 0;
         width: 100%;
-        height: 17.4rem;
+        /* min-height: 17.4rem; */
+        height: auto;
     }
     .homepage-mall__heading-content-right {
         margin: 0;
@@ -222,6 +223,13 @@
         font-size: 1.6rem;
         color: var(--primary-color);
         opacity: 1;
+    }
+    .trend-search__content-item-img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .trend-search__content-item-info {
+        padding: .8rem 0 1rem 1rem;
     }
     /* All Product */
     .product__heading {
@@ -331,6 +339,12 @@
         width: calc(100% / 3 - 10px);
         min-width: 10rem;
     }
+    .best-sales__content-title {
+        padding-left: 0;
+    }
+    .best-sales__content-link {
+        margin-right: 0;
+    }
     .best-sales__content-item-img {
         width: 100%;
         object-fit: contain;
@@ -384,6 +398,24 @@
     .section__banner-category-item {
         width: 10rem!important;
     }
+    /* HomePage Mall */
+    .homepage-mall__heading-title-item-icon {
+        margin-right: 3px;
+    }
+    .homepage-mal__heading-title-item-content {
+        font-weight: 400;
+        white-space: nowrap;
+    }
+    .homepage-mall__heading-title-link {
+        margin-left: 0;
+    }
+    .homepage-mall__heading-link {
+        margin-right: 0;
+    }
+    /* Category */
+    .category__heading-title {
+        padding-left: 0;
+    }
     /* Shopee Skinny */
     .shopee-skinny-banner__container-link {
         width: calc(100% / 3);
@@ -391,6 +423,8 @@
     .shoppe-skinny-banner__container-img {
         width: 100%;
         min-width: 100%;
+        min-height: 6rem;
+        height: auto;
     }
     /* Footer */
     .footer__content-service {
@@ -426,9 +460,22 @@
         border-bottom: 1px solid rgb(243, 243, 243);
         border-left: 1px solid rgb(243, 243, 243);
     }
+    .trend-search__content-item-name {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+    .trend-search__heading-title {
+        margin-left: 0;
+    }
+    .trend-search__heading-link {
+        margin-right: 0;
+    }
     /* All Product */
     .product__content-panels-item {
         width: calc(100% / 3 - 10px);
+    }
+    .product__heading-tag-item-name {
+        margin-left: 0;
     }
 }
 
@@ -453,26 +500,46 @@
     /* Footer */
     .footer-bottom__heading-list {
         flex-direction: column;
+        padding-bottom: 1.4rem;
         margin-bottom: 2.4rem;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
     }
     .footer-bottom__heading-item {
-        width: 100%;
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
         margin-right: 0;
         padding-right: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         margin-bottom: 2rem;
+        display: inline-block;
+        position: relative;
+    }
+    .footer-bottom__heading-item::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-color);
+        right: 0;
+        transition: all 0.5s linear;
+    }
+    .footer-bottom__heading-item:hover::before {
+        width: 100%;
+        left: 0;
+        right: auto;
     }
     .footer-bottom__heading-item--separate.header__navbar-item--separate::after {
         display: none;
     }
     .footer-bottom__certificate {
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
     .footer-bottom__certificate-link:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 1.2rem;
+        margin-right: 1rem;
     }
     .footer-bottom__company-name {
         margin: 1.4rem 0;
