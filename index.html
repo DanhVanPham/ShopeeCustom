@@ -2316,7 +2316,9 @@
                     </a>
                 </div>
             </div>
-            <div class="shopee-floating-icons__wrapper" style="background-image: url(&quot;https://cf.shopee.vn/file/ef9feaee59e43e0597642d23dc4dae51&quot;); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="shopee-floating-icons__wrapper" style="background-image: url(&quot;https://cf.shopee.vn/file/ef9feaee59e43e0597642d23dc4dae51&quot;); background-size: cover; background-repeat: no-repeat;">
+                <div class="shopee-floating-icons__close" id="closeShopeeFloatingIcon"></div>
+            </div>
         </div>
         <footer class="footer">
             <div class="grid footer__content-info">
@@ -3441,6 +3443,9 @@
             }
         })
         displayWindowSize();
+        document.querySelector("#closeShopeeFloatingIcon").addEventListener("click", () => {
+            document.querySelector(".shopee-floating-icons__wrapper").style.display = "none";
+        })
     </script>
 
 
