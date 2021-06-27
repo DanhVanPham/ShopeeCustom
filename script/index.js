@@ -26,10 +26,6 @@ function displayWindowSize() {
             el: ".swiper-pagination",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".carousel__arrow--right",
-            prevEl: ".carousel__arrow--left",
-        },
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -54,10 +50,6 @@ function displayWindowSize() {
         spaceBetween: 5,
         mousewheel: true,
         keyboard: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
         slidesPerView: 'auto'
     });
     // Display result inside a div element
@@ -91,10 +83,6 @@ function displayWindowSize() {
                 spaceBetween: 5,
                 mousewheel: true,
                 keyboard: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
                 slidesPerView: 'auto'
             });
         }
@@ -111,10 +99,6 @@ function displayWindowSize() {
                 spaceBetween: 5,
                 mousewheel: true,
                 keyboard: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
                 slidesPerView: 'auto'
             });
         }
