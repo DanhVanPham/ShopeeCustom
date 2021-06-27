@@ -1200,7 +1200,7 @@
 .section__banner-category-list {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .section__banner-category-item {
@@ -1252,11 +1252,13 @@
 .shopee-floating-icons__wrapper {
     top: 0;
     position: fixed;
-    width: 8.2rem;
-    height: 8.2rem;
+    min-width: 8.2rem;
+    min-height: 8.2rem;
+    width: 9rem;
+    height: 9rem;
     z-index: 3;
-    right: 2.4rem;
-    top: 80vh;
+    right: 1rem;
+    top: 69vh;
     z-index: 10;
 }
 
@@ -2290,7 +2292,6 @@
     margin-top: 0.4rem;
 }
 
-.product__content-panels-more-link:active,
 .product__content-panels-more-link:hover {
     background: rgba(0, 0, 0, .02);
 }

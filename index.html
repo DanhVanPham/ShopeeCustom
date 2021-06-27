@@ -846,13 +846,13 @@
             </div>
             <div class="grid shopee-skinny-banner__container">
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/0d14d608ef69763378c1554ee2335664');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/2f0b2deb1945c172f1b6bd5fa51af6d4');"></div>
                 </a>
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/fa6a256e3a94b5f54320e0d7381bdcb3');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/8eb391eb7497f362a772f2558ac18439');"></div>
                 </a>
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/0996853857dce744582f3312a1e86192');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/abcd0044cefdcb72162fe0eaeace40a1');"></div>
                 </a>
             </div>
             <div class="grid section__homepage-mall">
@@ -2228,7 +2228,7 @@
                     </a>
                 </div>
             </div>
-            <div class="shopee-floating-icons__wrapper" style="background-image: url(&quot;https://cf.shopee.vn/file/0d0be5552a4b95cc6646187fb78042b2&quot;); background-size: cover; background-repeat: no-repeat;"></div>
+            <div class="shopee-floating-icons__wrapper" style="background-image: url(&quot;https://cf.shopee.vn/file/ef9feaee59e43e0597642d23dc4dae51&quot;); background-size: cover; background-repeat: no-repeat;"></div>
         </div>
         <footer class="footer">
             <div class="grid footer__content-info">
@@ -3399,7 +3399,7 @@
         });
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",
@@ -3425,7 +3425,7 @@
                     }
                     var swiper = new Swiper(".category__content", {
                         direction: 'horizontal',
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         slidesPerColumn: 2,
                         slidesPerColumnFill: 'row',
                         spaceBetween: 0,
@@ -3441,7 +3441,7 @@
                         listFlashSales[i].classList.add("swiper-slide");
                     }
                     var swiper = new Swiper(".flash-sales__content", {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                         pagination: {
                             el: ".swiper-pagination",
@@ -3459,7 +3459,7 @@
                         listHomePages[i].classList.add("swiper-slide");
                     }
                     var swiper = new Swiper(".homepage-mall__heading-content-right", {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                         pagination: {
                             el: ".swiper-pagination",
@@ -3477,10 +3477,17 @@
                     }
                     var swiper = new Swiper(".section__banner-category", {
                         direction: 'horizontal',
-                        slidesPerView: 3,
+                        slidesPerView: 5,
                         slidesPerColumn: 2,
                         slidesPerColumnFill: 'row',
                         spaceBetween: 0,
+                        breakpoints: {
+                            // when window width is >= 788px
+                            500: {
+                                slidesPerView: 3,
+                                spaceBetween: 0
+                            }
+                        }
                     });
                 }
             } else {
