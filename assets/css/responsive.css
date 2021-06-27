@@ -92,9 +92,6 @@
     .section__banner-category-list {
         justify-content: flex-start;
     }
-    .section__banner-category-item-link {
-        /* width: fit-content; */
-    }
     .section__banner-category-img {
         width: 4.2rem;
         height: 4.2rem;
@@ -491,9 +488,6 @@
     /* Shopee Skinny */
     .shopee-skinny-banner__container-link {
         width: calc(100% / 3);
-    }
-    .shopee-skinny-banner__container-link:nth-child(2) .shoppe-skinny-banner__container-img {
-        /* min-height: 14rem; */
     }
     .shoppe-skinny-banner__container-img {
         width: 100%;

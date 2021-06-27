@@ -50,6 +50,16 @@ function displayWindowSize() {
         },
         slidesPerView: 'auto'
     });
+    new Swiper(".mySwiper", {
+        spaceBetween: 5,
+        mousewheel: true,
+        keyboard: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        slidesPerView: 'auto'
+    });
     // Display result inside a div element
     if (w <= 1023) {
         var categoryContent = document.querySelector(".category__content");
@@ -78,12 +88,14 @@ function displayWindowSize() {
                 listFlashSales[i].classList.add("swiper-slide");
             }
             flashSalesSwiper = new Swiper(".flash-sales__content", {
-                slidesPerView: 4,
-                spaceBetween: 10,
-                // pagination: {
-                //     el: ".swiper-pagination",
-                //     clickable: true,
-                // },
+                spaceBetween: 5,
+                mousewheel: true,
+                keyboard: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 'auto'
             });
         }
 
@@ -96,8 +108,14 @@ function displayWindowSize() {
                 listHomePages[i].classList.add("swiper-slide");
             }
             homePageMallSwiper = new Swiper(".homepage-mall__heading-content-right", {
-                slidesPerView: 4,
-                spaceBetween: 10,
+                spaceBetween: 5,
+                mousewheel: true,
+                keyboard: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 'auto'
             });
         }
         var bannerContent = document.querySelector(".section__banner-category");

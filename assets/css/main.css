@@ -832,8 +832,6 @@
     white-space: nowrap;
 }
 
-.header__cart-item-calc-price {}
-
 .header__cart-item-price {
     font-size: 1.4rem;
     font-weight: 500;
@@ -1390,8 +1388,6 @@
     position: relative;
 }
 
-.best-sales__content-item-img {}
-
 .best-sales__content-item-price {
     font-size: 1.8rem;
     line-height: 1.8rem;
@@ -1448,8 +1444,6 @@
     flex-direction: column;
     background-color: #fff;
 }
-
-.category__heading {}
 
 .category__heading-title {
     font-size: 1.8rem;
@@ -2252,8 +2246,6 @@
     align-items: flex-end;
     margin-top: 10px;
 }
-
-.product__content-panels-item-current-price {}
 
 .product__content-panels-item-dollar-sign {
     text-decoration: underline;

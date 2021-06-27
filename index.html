@@ -3425,60 +3425,22 @@
     <script>
         var listBanners = document.querySelectorAll(".banner__carousel .banner__carousel-list .banner__carousel-item");
         document.addEventListener('click', function(event) {
-                if (event.target.id === "register-form") {
-                    document.getElementById("modal-form").style.display = "flex";
-                    document.getElementById("register-auth-form").style.display = "block";
-                } else if (event.target.id === "login-form") {
-                    document.getElementById("modal-form").style.display = "flex";
-                    document.getElementById("login-auth-form").style.display = "block"
-                } else if (event.target.id === "close-modal") {
-                    document.getElementById("modal-form").style.display = "none";
-                    if (document.getElementById("login-auth-form").style.display === "block") {
-                        document.getElementById("login-auth-form").style.display = "none";
-                    } else if (document.getElementById("register-auth-form").style.display === "block") {
-                        document.getElementById("register-auth-form").style.display = "none";
-                    }
+            if (event.target.id === "register-form") {
+                document.getElementById("modal-form").style.display = "flex";
+                document.getElementById("register-auth-form").style.display = "block";
+            } else if (event.target.id === "login-form") {
+                document.getElementById("modal-form").style.display = "flex";
+                document.getElementById("login-auth-form").style.display = "block"
+            } else if (event.target.id === "close-modal") {
+                document.getElementById("modal-form").style.display = "none";
+                if (document.getElementById("login-auth-form").style.display === "block") {
+                    document.getElementById("login-auth-form").style.display = "none";
+                } else if (document.getElementById("register-auth-form").style.display === "block") {
+                    document.getElementById("register-auth-form").style.display = "none";
                 }
-            })
-            //     // var swiper = new Swiper(".homepage-mall__heading-content-carousel-wrapper", {
-            //     //     spaceBetween: 5,
-            //     //     loop: true,
-            //     //     mousewheel: true,
-            //     //     keyboard: true,
-            //     //     pagination: {
-            //     //         el: ".swiper-pagination",
-            //     //         clickable: true,
-            //     //     },
-            //     //     autoplay: {
-            //     //         delay: 5000,
-            //     //         disableOnInteraction: false,
-            //     //     },
-            //     //     slidesPerView: 'auto'
-            //     // });
-            // var bannerSwiper = new Swiper(".banner__carousel", {
-            //     slidesPerView: 1,
-            //     spaceBetween: 0,
-            //     loop: true,
-            //     mousewheel: true,
-            //     keyboard: true,
-            //     pagination: {
-            //         el: ".swiper-pagination",
-            //         clickable: true,
-            //     },
-            //     navigation: {
-            //         nextEl: ".carousel__arrow--right",
-            //         prevEl: ".carousel__arrow--left",
-            //     },
-            //     autoplay: {
-            //         delay: 5000,
-            //         disableOnInteraction: false,
-            //     },
-            // });
+            }
+        })
         displayWindowSize();
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        });
     </script>
 
 
