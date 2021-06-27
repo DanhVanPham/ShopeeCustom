@@ -11,6 +11,7 @@
     .header__search {
         flex-direction: row-reverse;
         box-shadow: 0 0 1px rgb(0 0 0 / 50%);
+        height: 6rem;
     }
     .header-with-search {
         align-items: center;
@@ -29,13 +30,15 @@
     .header__search-btn {
         background-color: transparent;
         height: 100%;
-        width: 2rem;
+        width: 4rem;
     }
     .header__search-btn-icon {
         color: var(--text-color);
+        font-size: 1.6rem;
     }
     .header__search-input {
         padding: 0.2rem 1rem 0.2rem 0.4rem;
+        font-size: 1.6rem;
     }
     .header__search-input::placeholder {
         color: var(--primary-color);
@@ -54,9 +57,18 @@
     .banner__carousel-list {
         display: none;
     }
+    .banner__carousel {
+        display: none;
+    }
+    .banner__carousel.banner__carousel--mobile {
+        display: block;
+    }
     .banner__carousel-list--mobile {
         display: flex;
         margin-top: -14rem;
+    }
+    .section__banner-category-item:nth-child(n + 11) {
+        display: block;
     }
     /* Carousel */
     .banner__carousel:hover>.carousel__arrow {
@@ -89,8 +101,6 @@
     }
     .section__banner-category-description {
         width: 100%;
-        font-size: 1rem;
-        height: 3.5rem;
         margin: 0 auto;
     }
     .banner__right {
@@ -129,9 +139,6 @@
     .best-sales__content {
         display: none;
     }
-    .best-sales__content-title {
-        font-size: 1.6rem;
-    }
     .best-sales__content-mobile {
         display: block;
         /* background-color: #ffebda; */
@@ -160,12 +167,8 @@
         margin-top: 1rem;
     }
     .category__heading-title {
-        font-size: 1.6rem;
         color: var(--primary-color);
         opacity: 1;
-        font-weight: 400;
-        padding: 1rem 0;
-        margin: 0 1rem;
     }
     .category__content-item-name {
         margin-top: auto;
@@ -197,14 +200,8 @@
     .flash-sales__content-item-description {
         margin-top: 1rem;
     }
-    .flash-sales__content-item-price-number {
-        font-size: 1.6rem;
-    }
     .flash-sales__content-item-process {
         margin: 8px auto;
-    }
-    .flash-sales__content-item-process-content {
-        font-size: 1rem;
     }
     /* Homepage Mall */
     .section__homepage-mall {
@@ -229,9 +226,12 @@
         margin: 0 1rem;
     }
     .homepage-mall__heading-content-carousel-wrapper {
+        display: none;
+    }
+    .homepage-mall__heading-content-carousel-wrapper--mobile {
+        display: flex;
         margin: 0 auto 0;
         width: 100%;
-        /* min-height: 17.4rem; */
         height: auto;
     }
     .homepage-mall__heading-content-right {
@@ -239,9 +239,6 @@
     }
     .homepage-mall__heading-content-product-list {
         flex-wrap: nowrap;
-    }
-    .homepage-mall__heading-title-link {
-        font-size: 1.6rem;
     }
     /* Trend Search */
     .section__trend-search {
@@ -252,7 +249,6 @@
         border: none;
     }
     .trend-search__heading-title {
-        font-size: 1.6rem;
         color: var(--primary-color);
         opacity: 1;
     }
@@ -282,7 +278,6 @@
         background-color: #efefef;
     }
     .product__heading-tag-item-name {
-        font-size: 1.6rem;
         border: none;
         text-align: left;
         margin-left: 2rem;
@@ -322,7 +317,6 @@
     }
     .footer__content-service-heading {
         text-align: center;
-        font-size: 1.6rem;
     }
     .footer__content-service-link-list {
         justify-content: center;
@@ -346,17 +340,12 @@
         padding: 1rem;
     }
     .homepage-mall__heading-content-product-description {
-        font-size: 1.2rem;
-        font-weight: 600;
         color: var(--text-primary);
         width: 80%;
         margin: 0 auto;
     }
     .homepage-mall__heading--mobile .homepage-mall__heading-title-item:not(:last-child) {
         margin-right: 0;
-    }
-    .homepage-mal__heading-title-item-content {
-        font-size: 1.4rem;
     }
     .footer__content-service-bottom-right {
         flex-direction: column;
@@ -378,8 +367,19 @@
 }
 
 @media screen and (max-width: 719px) {
+    .header__search {
+        height: 4rem;
+    }
+    .header__search-input {
+        font-size: 1.4rem;
+    }
     .banner__carousel-list--mobile {
         margin-top: -8rem;
+    }
+    /* Banner Category */
+    .section__banner-category-description {
+        font-size: 1rem;
+        height: 3.5rem;
     }
     /* Tag discount */
     .tag-discount {
@@ -415,6 +415,12 @@
         object-position: top;
     }
     /* Catergory Content */
+    .category__heading-title {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
     .category__content-item-img {
         width: 100%;
     }
@@ -433,6 +439,9 @@
     } */
     /* } */
     /* Flash Sales */
+    .flash-sales__content-item-process-content {
+        font-size: 1rem;
+    }
     .flash-sales__heading-title {
         width: 8.6rem;
         height: 4.2rem;
@@ -456,6 +465,16 @@
         width: 10rem!important;
     }
     /* HomePage Mall */
+    .homepage-mal__heading-title-item-content {
+        font-size: 1.4rem;
+    }
+    .homepage-mall__heading-content-product-description {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .homepage-mall__heading-title-link {
+        font-size: 1.6rem;
+    }
     .homepage-mall__heading-title-item-icon {
         margin-right: 3px;
     }
@@ -500,6 +519,9 @@
         margin-bottom: 2.8rem;
         text-align: center;
     }
+    .footer__content-service-heading {
+        font-size: 1.6rem;
+    }
     .product__content-panels-more-link {
         grid-column: 1 / span 6;
     }
@@ -508,6 +530,9 @@
         font-size: 1.2rem;
     }
     /* Trend Search */
+    .trend-search__heading-title {
+        font-size: 1.6rem;
+    }
     .trend-search__content-list {
         display: none;
     }
@@ -533,6 +558,15 @@
         margin-right: 0;
     }
     /* All Product */
+    .product__heading-tag-item-name {
+        font-size: 1.6rem;
+    }
+    .flash-sales__content-item-price-number {
+        font-size: 1.6rem;
+    }
+    .best-sales__content-title {
+        font-size: 1.6rem;
+    }
     .product__content-panels-item {
         width: calc(100% / 3 - 10px);
     }
@@ -561,8 +595,6 @@
     .best-sales__content-item-price {
         padding-top: 0;
         margin-top: 0;
-        /* position: absolute; */
-        /* bottom: -2.8rem; */
         font-size: 1.7rem;
         line-height: 1.7rem;
     }

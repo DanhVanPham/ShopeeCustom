@@ -1011,6 +1011,10 @@
     position: relative;
 }
 
+.banner__carousel--mobile {
+    display: none;
+}
+
 .banner__carousel-list {
     height: 100%;
     display: flex;
@@ -1208,6 +1212,10 @@
     margin-right: 21px;
     text-align: center;
     transition: transform ease 0.1s;
+}
+
+.section__banner-category-item:nth-child(n + 11) {
+    display: none;
 }
 
 .section__banner-category-item:hover {
@@ -1779,6 +1787,10 @@
     flex: none;
     width: 38.2rem;
     margin-bottom: 1.2rem;
+}
+
+.homepage-mall__heading-content-carousel-wrapper--mobile {
+    display: none;
 }
 
 .homepage-mall__heading-content-carousel {

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/shopee-icon.png" type="image/gif" sizes="20x20">
+    <script src="./script/index.js"></script>
     <title>Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
 </head>
 
@@ -292,6 +293,16 @@
                                 </a>
                             </li>
                         </ul>
+
+                        <div class="carousel__arrow carousel__arrow--left carousel__arrow-background">
+                            <i class="carousel__arrow-icon fas fa-chevron-left"></i>
+                        </div>
+                        <div class="carousel__arrow carousel__arrow--right carousel__arrow-background">
+                            <i class="carousel__arrow-icon fas fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div style="--swiper-pagination-color: var(--primary-color)" class="swiper-container banner__carousel banner__carousel--mobile">
                         <ul class="swiper-wrapper banner__carousel-list banner__carousel-list--mobile">
                             <li class="swiper-slide banner__carousel-item">
                                 <a href="#" class="banner__carousel-item-link">
@@ -340,14 +351,6 @@
                         <div class="carousel__arrow carousel__arrow--right carousel__arrow-background">
                             <i class="carousel__arrow-icon fas fa-chevron-right"></i>
                         </div>
-                        <!-- <div class="carousel__dot-list">
-                            <div class="carousel__dot-item carousel__dot-item--active"></div>
-                            <div class="carousel__dot-item"></div>
-                            <div class="carousel__dot-item"></div>
-                            <div class="carousel__dot-item"></div>
-                            <div class="carousel__dot-item"></div>
-                            <div class="carousel__dot-item"></div>
-                        </div> -->
                         <div class="swiper-pagination"></div>
                     </div>
                     <div class="banner__right">
@@ -359,6 +362,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="section__banner-container">
                     <div class="grid  section__banner-category">
                         <ul class="section__banner-category-list">
@@ -420,6 +424,67 @@
                                 <a href="#" class="section__banner-category-item-link">
                                     <img src="https://cf.shopee.vn/file/0a3e3aa16b083d6b7e2c25a8f2c16731_xhdpi" alt="Home" class="section__banner-category-img">
                                     <p class="section__banner-category-description">Shopee Premium</p>
+                                </a>
+                            </li>
+
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/281894c2ea029df3f2405ae42bff8f32_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Ưu Đãi Thành Viên - Tới 50%</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/29961f92098bc9153b88332110a91c87_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Hàng Quốc Tế - Deal Đồng Giá</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/c360d75f1605e54f07c2b30100755722_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Săn Siêu Sale</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/a376f80dc826e3abdcf0bb5fe766a263_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Shopee Mart - Siêu Thị 0Đ</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/8f0f15928d2ec2b1203ef691efe0d4eb_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Vận May 1Đ</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/70a8063327186dc6ff9a2dd15d464a83_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Săn Xu Mỗi Ngày</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/1d25d74d6900b85cfde8f967e613041d_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Giải thưởng Shopee</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/0d60e1e31058415cbc8c1a598a872b09_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Miễn Phí Vận Chuyển</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/c68804e5aaad26526093bb863fc96fd3_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Shopee Mall</p>
+                                </a>
+                            </li>
+                            <li class=" section__banner-category-item">
+                                <a href="#" class="section__banner-category-item-link">
+                                    <img src="https://cf.shopee.vn/file/c628ee18a47cea7fb7248dd2edfbd305_xxhdpi" alt="Home" class="section__banner-category-img">
+                                    <p class="section__banner-category-description">Ưu Đãi Đối Tác</p>
                                 </a>
                             </li>
                         </ul>
@@ -846,13 +911,13 @@
             </div>
             <div class="grid shopee-skinny-banner__container">
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/2f0b2deb1945c172f1b6bd5fa51af6d4');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/e7069af6fa725bc695295c2159fe07df');"></div>
                 </a>
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/8eb391eb7497f362a772f2558ac18439');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/0e11bad91625f9adb8096ddfeb4a78dc');"></div>
                 </a>
                 <a href="#" class="shopee-skinny-banner__container-link">
-                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/abcd0044cefdcb72162fe0eaeace40a1');"></div>
+                    <div class="shoppe-skinny-banner__container-img" style="background-image: url('https://cf.shopee.vn/file/bab8001a70db0833b3762b0658b59966');"></div>
                 </a>
             </div>
             <div class="grid section__homepage-mall">
@@ -891,7 +956,27 @@
                             <span class="homepage-mal__heading-title-item-content">giao miễn phí</span>
                         </li>
                     </ul>
+
+
+
                     <div style="--swiper-pagination-color: var(--primary-color)" class="swiper-container homepage-mall__heading-content-carousel-wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide homepage-mall__heading-content-carousel">
+                                <img src="https://cf.shopee.vn/file/ca2be766542786b15d6c7a504649371b" alt="Product" class="homepage-mall__heading-content-carousel-img">
+                            </div>
+                            <div class="swiper-slide homepage-mall__heading-content-carousel">
+                                <img src="https://cf.shopee.vn/file/11fb24d297512daab47f6b17f6b0100d" alt="Product" class="homepage-mall__heading-content-carousel-img">
+                            </div>
+                            <div class="swiper-slide homepage-mall__heading-content-carousel">
+                                <img src="https://cf.shopee.vn/file/aa9e79630d6adbc38ad20c68be0a1f88" alt="Product" class="homepage-mall__heading-content-carousel-img">
+                            </div>
+                            <div class="swiper-slide homepage-mall__heading-content-carousel">
+                                <img src="https://cf.shopee.vn/file/9aade6bf512664bc437f1ae314009573" alt="Product" class="homepage-mall__heading-content-carousel-img">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div style="--swiper-pagination-color: var(--primary-color)" class="swiper-container homepage-mall__heading-content-carousel-wrapper homepage-mall__heading-content-carousel-wrapper--mobile">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide homepage-mall__heading-content-carousel">
                                 <img src="https://cf.shopee.vn/file/fd159342c1ed85825a48802993ab7202" alt="Product" class="homepage-mall__heading-content-carousel-img">
@@ -905,6 +990,9 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+
+
+
                     <div class="homepage-mall__heading-content-right">
                         <div class="homepage-mall__heading-content-product-list">
                             <div class="homepage-mall__heading-content-product-item">
@@ -3337,229 +3425,60 @@
     <script>
         var listBanners = document.querySelectorAll(".banner__carousel .banner__carousel-list .banner__carousel-item");
         document.addEventListener('click', function(event) {
-            if (event.target.id === "register-form") {
-                document.getElementById("modal-form").style.display = "flex";
-                document.getElementById("register-auth-form").style.display = "block";
-            } else if (event.target.id === "login-form") {
-                document.getElementById("modal-form").style.display = "flex";
-                document.getElementById("login-auth-form").style.display = "block"
-            } else if (event.target.id === "close-modal") {
-                document.getElementById("modal-form").style.display = "none";
-                if (document.getElementById("login-auth-form").style.display === "block") {
-                    document.getElementById("login-auth-form").style.display = "none";
-                } else if (document.getElementById("register-auth-form").style.display === "block") {
-                    document.getElementById("register-auth-form").style.display = "none";
+                if (event.target.id === "register-form") {
+                    document.getElementById("modal-form").style.display = "flex";
+                    document.getElementById("register-auth-form").style.display = "block";
+                } else if (event.target.id === "login-form") {
+                    document.getElementById("modal-form").style.display = "flex";
+                    document.getElementById("login-auth-form").style.display = "block"
+                } else if (event.target.id === "close-modal") {
+                    document.getElementById("modal-form").style.display = "none";
+                    if (document.getElementById("login-auth-form").style.display === "block") {
+                        document.getElementById("login-auth-form").style.display = "none";
+                    } else if (document.getElementById("register-auth-form").style.display === "block") {
+                        document.getElementById("register-auth-form").style.display = "none";
+                    }
                 }
-            }
-        })
-        var swiper = new Swiper(".homepage-mall__heading-content-carousel-wrapper", {
-            spaceBetween: 5,
-            loop: true,
-            mousewheel: true,
-            keyboard: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            slidesPerView: 'auto'
-        });
-        var swiper = new Swiper(".banner__carousel", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            mousewheel: true,
-            keyboard: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".carousel__arrow--right",
-                prevEl: ".carousel__arrow--left",
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                    slidePerView: 3,
-                },
-                768: {
-                    slidePerView: 3,
-                },
-                1024: {
-                    slidePerView: 3,
-                }
-            }
-        });
-
+            })
+            //     // var swiper = new Swiper(".homepage-mall__heading-content-carousel-wrapper", {
+            //     //     spaceBetween: 5,
+            //     //     loop: true,
+            //     //     mousewheel: true,
+            //     //     keyboard: true,
+            //     //     pagination: {
+            //     //         el: ".swiper-pagination",
+            //     //         clickable: true,
+            //     //     },
+            //     //     autoplay: {
+            //     //         delay: 5000,
+            //     //         disableOnInteraction: false,
+            //     //     },
+            //     //     slidesPerView: 'auto'
+            //     // });
+            // var bannerSwiper = new Swiper(".banner__carousel", {
+            //     slidesPerView: 1,
+            //     spaceBetween: 0,
+            //     loop: true,
+            //     mousewheel: true,
+            //     keyboard: true,
+            //     pagination: {
+            //         el: ".swiper-pagination",
+            //         clickable: true,
+            //     },
+            //     navigation: {
+            //         nextEl: ".carousel__arrow--right",
+            //         prevEl: ".carousel__arrow--left",
+            //     },
+            //     autoplay: {
+            //         delay: 5000,
+            //         disableOnInteraction: false,
+            //     },
+            // });
+        displayWindowSize();
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
             spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
         });
-
-        function displayWindowSize() {
-            // Get width and height of the window excluding scrollbars
-            var w = document.documentElement.clientWidth;
-            var h = document.documentElement.clientHeight;
-
-            // Display result inside a div element
-            if (w <= 1023) {
-
-                var categoryContent = document.querySelector(".category__content");
-                if (!categoryContent.classList.contains(".swiper-container")) {
-                    categoryContent.classList.add("swiper-container");
-                    document.querySelector(".category__content-list").classList.add("swiper-wrapper");
-                    var listCategories = document.querySelectorAll(".category__content-item");
-                    for (var i = 0; i < listCategories.length; i++) {
-                        listCategories[i].classList.add("swiper-slide");
-                    }
-                    var swiper = new Swiper(".category__content", {
-                        direction: 'horizontal',
-                        slidesPerView: 4,
-                        slidesPerColumn: 2,
-                        slidesPerColumnFill: 'row',
-                        spaceBetween: 0,
-                    });
-                }
-
-                var flashSalesContent = document.querySelector(".flash-sales__content");
-                if (!flashSalesContent.classList.contains(".swiper-container")) {
-                    flashSalesContent.classList.add("swiper-container");
-                    document.querySelector(".flash-sales__content-list").classList.add("swiper-wrapper");
-                    var listFlashSales = document.querySelectorAll(".flash-sales__content-item");
-                    for (var i = 0; i < listFlashSales.length; i++) {
-                        listFlashSales[i].classList.add("swiper-slide");
-                    }
-                    var swiper = new Swiper(".flash-sales__content", {
-                        slidesPerView: 4,
-                        spaceBetween: 10,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                    });
-                }
-
-                var homePage = document.querySelector(".homepage-mall__heading-content-right");
-                if (!homePage.classList.contains(".swiper-container")) {
-                    homePage.classList.add("swiper-container");
-                    document.querySelector(".homepage-mall__heading-content-product-list").classList.add("swiper-wrapper");
-                    var listHomePages = document.querySelectorAll(".homepage-mall__heading-content-product-item");
-                    for (var i = 0; i < listHomePages.length; i++) {
-                        listHomePages[i].classList.add("swiper-slide");
-                    }
-                    var swiper = new Swiper(".homepage-mall__heading-content-right", {
-                        slidesPerView: 4,
-                        spaceBetween: 10,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                    });
-                }
-                var bannerContent = document.querySelector(".section__banner-category");
-                if (!bannerContent.classList.contains(".swiper-container")) {
-                    bannerContent.classList.add("swiper-container");
-                    document.querySelector(".section__banner-category-list").classList.add("swiper-wrapper");
-                    var listFlashSales = document.querySelectorAll(".section__banner-category-item");
-                    for (var i = 0; i < listFlashSales.length; i++) {
-                        listFlashSales[i].classList.add("swiper-slide");
-                    }
-                    var swiper = new Swiper(".section__banner-category", {
-                        direction: 'horizontal',
-                        slidesPerView: 5,
-                        slidesPerColumn: 2,
-                        slidesPerColumnFill: 'row',
-                        spaceBetween: 0,
-                        breakpoints: {
-                            // when window width is >= 788px
-                            500: {
-                                slidesPerView: 3,
-                                spaceBetween: 0
-                            }
-                        }
-                    });
-                }
-            } else {
-                var categoryContent = document.querySelector(".category__content");
-                if (categoryContent.classList.contains("swiper-container")) {
-                    categoryContent.classList.remove("swiper-container");
-                    categoryContent.classList.remove("swiper-container-initialized");
-                    categoryContent.classList.remove("swiper-container-horizontal");
-                    categoryContent.style = '';
-                    document.querySelector(".category__content-list").classList.remove("swiper-wrapper");
-                    document.querySelector(".category__content-list").style = '';
-                    var listCategories = document.querySelectorAll(".category__content-item");
-                    for (var i = 0; i < listCategories.length; i++) {
-                        listCategories[i].classList.remove("swiper-slide");
-                        listCategories[i].style = '';
-                    }
-                }
-
-                var flashSalesContent = document.querySelector(".flash-sales__content");
-
-                flashSalesContent.style = '';
-                if (flashSalesContent.classList.contains("swiper-container")) {
-                    flashSalesContent.classList.remove("swiper-container");
-                    flashSalesContent.classList.remove("swiper-container-initialized");
-                    flashSalesContent.classList.remove("swiper-container-horizontal");
-                    document.querySelector(".flash-sales__content-list").classList.remove("swiper-wrapper");
-                    document.querySelector(".flash-sales__content-list").style = ''
-                    var listFlashSales = document.querySelectorAll(".flash-sales__content-item");
-                    for (var i = 0; i < listCategories.length; i++) {
-                        listFlashSales[i].classList.remove("swiper-slide");
-                        listFlashSales[i].style = ''
-                    }
-                }
-
-                var bannerContent = document.querySelector(".section__banner-category");
-
-                bannerContent.style = '';
-                if (bannerContent.classList.contains("swiper-container")) {
-                    bannerContent.classList.remove("swiper-container");
-                    bannerContent.classList.remove("swiper-container-initialized");
-                    bannerContent.classList.remove("swiper-container-horizontal");
-                    document.querySelector(".section__banner-category-list").classList.remove("swiper-wrapper");
-                    document.querySelector(".section__banner-category-list").style = ''
-                    var listBannerContent = document.querySelectorAll(".section__banner-category-item");
-                    for (var i = 0; i < listCategories.length; i++) {
-                        listBannerContent[i].classList.remove("swiper-slide");
-                        listBannerContent[i].style = ''
-                    }
-                }
-
-                var homePage = document.querySelector(".homepage-mall__heading-content-right");
-
-                homePage.style = '';
-                if (homePage.classList.contains("swiper-container")) {
-                    homePage.classList.remove("swiper-container");
-                    homePage.classList.remove("swiper-container-initialized");
-                    homePage.classList.remove("swiper-container-horizontal");
-                    document.querySelector(".homepage-mall__heading-content-product-list").classList.remove("swiper-wrapper");
-                    document.querySelector(".homepage-mall__heading-content-product-list").style = ''
-                    var listBannerContent = document.querySelectorAll(".homepage-mall__heading-content-product-item");
-                    for (var i = 0; i < listCategories.length; i++) {
-                        listBannerContent[i].classList.remove("swiper-slide");
-                        listBannerContent[i].style = ''
-                    }
-                }
-
-            }
-
-
-        }
-        window.addEventListener("resize", displayWindowSize);
-        displayWindowSize();
     </script>
 
 
